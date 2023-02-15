@@ -56,8 +56,27 @@ const Sidebar = () => {
               color: colors.grey[100],
             }}
           >
-            
+            {!isCollapsed && (
+              <Box 
+                display='flex'
+                justifyContent='space-between'
+                alignItems='center'
+                ml='15px'
+              >
+                <Typography 
+                  variant='h3'
+                  color={colors.grey[100]}
+                >
+                  ADMINS
+                </Typography>
+                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+                    <MenuOutlinedIcon />
+                </IconButton>
+              </Box>
+            )}
           </MenuItem>
+
+          {/* */}
         </Menu>
       </ProSidebar>
     </Box>
