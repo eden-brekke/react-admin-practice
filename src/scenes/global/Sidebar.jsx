@@ -78,13 +78,40 @@ const Sidebar = () => {
 
           {/* USER */}
           {!isCollapsed && (
-            <Box>
-              <Box>
-                {/* <img /> */}
+            <Box mb='25px'>
+              <Box 
+                display='flex'
+                justifyContent='center'
+                alignItems='center'
+              >
+                <img 
+                  alt='profile-user'
+                  width='100px'
+                  height='100px'
+                  src={`../../assets/user.jpg`}
+                  style={{
+                    cursor:'pointer',
+                    borderRadius: '50%'
+                  }}
+                />
               </Box>
-              <Box>
-                <Typography> Eden </Typography>
-                <Typography> VP Fancy Admin</Typography>
+              <Box textAlign='center'>
+                <Typography 
+                  variant='h2' 
+                  color={colors.grey[100]} 
+                  fontWeight='bold'
+                  sx={{
+                    m:'10px 0 0 0'
+                  }}
+                > 
+                  Clementine Pew 
+                </Typography>
+                <Typography 
+                  variant='h5'
+                  color={colors.greenAccent[500]}
+                > 
+                  VP Fancy Cat
+                </Typography>
               </Box>
             </Box>
           )}
