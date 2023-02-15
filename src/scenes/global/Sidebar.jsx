@@ -45,7 +45,9 @@ const Sidebar = () => {
         }
       }}
     >
-
+      <ProSidebar collapsed={isCollapsed}>
+        
+      </ProSidebar>
     </Box>
   )
 }
