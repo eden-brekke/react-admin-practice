@@ -132,10 +132,10 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Typography
-              variant='h6'
+              variant="h6"
               colors={colors.grey[300]}
               sx={{
-                m: '15px 0 5px 20px'
+                m: "15px 0 5px 20px",
               }}
             >
               Data
@@ -162,10 +162,10 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Typography
-              variant='h6'
+              variant="h6"
               colors={colors.grey[300]}
               sx={{
-                m: '15px 0 5px 20px'
+                m: "15px 0 5px 20px",
               }}
             >
               Pages
@@ -192,10 +192,10 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Typography
-              variant='h6'
+              variant="h6"
               colors={colors.grey[300]}
               sx={{
-                m: '15px 0 5px 20px'
+                m: "15px 0 5px 20px",
               }}
             >
               Charts
