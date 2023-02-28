@@ -66,7 +66,7 @@ const Form = () => {
                 onChange={handleChange}
                 value={values.firstName}
                 name="firstName"
-                error={!!touched.firstName && !!errors.firstName}
+                error={!!touched.firstName && !!errors.firstName} // if you have touched that component (or drawn focus)
                 helperText={touched.firstName && errors.firstName}
                 sx={{
                   gridColumn: "span 2"
