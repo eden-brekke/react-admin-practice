@@ -95,9 +95,9 @@ const Calendar = () => {
               listPlugin
             ]}
             headerToolbar={{
-              left:'prev, next today',
+              left:'prev,next today',
               center: 'title',
-              right: 'dayGridMonth, timeGridWeek, timeGridDay, listMonth'
+              right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
             }}
             initialView="dayGridMonth"
             editable={true}
@@ -107,6 +107,18 @@ const Calendar = () => {
             select={handleDateClick}
             eventClick={handleEventClick}
             eventsSet={(events)=> setCurrentEvents(events)}
+            initialEvents={[
+              {
+                id: '1234',
+                title: 'All-Day Event',
+                date: '2023-02-28',
+              },
+              {
+                id: '4321',
+                title: 'Timed Event',
+                date: '2023-02-14',
+              },
+              ]}
           />
         </Box>
       </Box>
