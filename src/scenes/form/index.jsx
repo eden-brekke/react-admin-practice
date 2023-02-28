@@ -66,7 +66,7 @@ const Form = () => {
                 onChange={handleChange}
                 value={values.firstName}
                 name="firstName"
-                error={!!touched.firstName && !!errors.firstName} // if you have touched that component (or drawn focus)
+                error={!!touched.firstName && !!errors.firstName} // in order for the error to display, the box must have been touched and it must have an error to display, if you have touched that component (or drawn focus)
                 helperText={touched.firstName && errors.firstName}
                 sx={{
                   gridColumn: "span 2"
@@ -77,7 +77,7 @@ const Form = () => {
                 variant="filled"
                 type="text"
                 label="Last Name"
-                onBlur={handleBlur}
+                onBlur={handleBlur} 
                 onChange={handleChange}
                 value={values.lastName}
                 name="lastName"
