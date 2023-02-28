@@ -77,7 +77,7 @@ const Form = () => {
                 variant="filled"
                 type="text"
                 label="Last Name"
-                onBlur={handleBlur} 
+                onBlur={handleBlur} // represents the function that changes depending on when you touch the box or touch out of it
                 onChange={handleChange}
                 value={values.lastName}
                 name="lastName"
